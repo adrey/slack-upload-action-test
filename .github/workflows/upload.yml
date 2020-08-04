@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - run: echo "Test file " > test.txt
+      - run: echo "Test file 1" > test.txt
       - name: Upload to slack step
         uses: adrey/slack-file-upload-action@4c8a4c4546045c002ab90430e08fc9557ad3f42c
         with:
