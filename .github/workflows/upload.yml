@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v1
       - run: echo "Test file 1" > test.txt
       - name: Upload to slack step
-        uses: adrey/slack-file-upload-action@038139c28b61f27acb7957616a3e0342a3c24d6d
+        uses: adrey/slack-file-upload-action@65c42a9ce80fa809971dee226bd321f96a515aad
         with:
           token: ${{ secrets.SLACK_TOKEN }}
           path: test.txt
