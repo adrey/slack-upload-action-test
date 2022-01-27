@@ -14,4 +14,4 @@ jobs:
           token: test #${{secrets.SLACK_TOKEN}}
           path: test.txt
           channel: random
-          initial_comment: "${{github.event_name}} on ${{github.ref_name}}@<https://github.com/OrgName/RepoName/commit/${{github.sha}}|${{github.sha}}> by ${{github.actor}}"
+          initial_comment: "${{github.event_name}}  on ${{github.ref_name}}@<https://github.com/OrgName/RepoName/commit/${{github.sha}}|${{github.sha}}> by ${{github.actor}}"
